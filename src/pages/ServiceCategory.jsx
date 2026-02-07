@@ -1,0 +1,121 @@
+import React from "react";
+import { useParams, Link } from "react-router-dom";
+import { useServicesByCategory, useServices } from "../hooks/useServices";
+import Footer from "../components/ui/Footer/Footer";
+import "./ServiceCategory.css";
+
+export const ServiceCategory = () => {
+  const { categoryId } = useParams();
+  const { categories } = useServices();
+  const { services, loading, error } = useServicesByCategory(categoryId);
+
+  const category = categories[categoryId];
+
+  if (loading) {
+    return (
+      <div className="service-category-page">
+        <div className="service-container">
+          <div
+            style={{ textAlign: "center", padding: "100px 0", color: "white" }}
+          >
+            Загрузка услуг...
+          </div>
+        </div>
+      </div>
+    );
+  }
+
+  if (error || !category) {
+    return (
+      <div className="service-category-page">
+        <div className="service-container">
+          <div className="not-found">
+            <h2>Категория не найдена</h2>
+            <Link to="/products" className="back-btn">
+              Вернуться к услугам
+            </Link>
+          </div>
+        </div>
+      </div>
+    );
+  }
+
+  return (
+    <div className="service-category-page">
+      <div className="service-container">
+        {/* Хлебные крошки */}
+        <div className="breadcrumbs">
+          <Link to="/" className="breadcrumb-link">
+            Главная
+          </Link>
+          <span className="breadcrumb-separator">›</span>
+          <Link to="/products" className="breadcrumb-link">
+            Все услуги
+          </Link>
+          <span className="breadcrumb-separator">›</span>
+          <span className="breadcrumb-current">{category.title}</span>
+        </div>
+
+        {/* Заголовок категории */}
+        <h1 className="products-title">
+          {category.title.split(" ")[0]}
+          <span className="products-subtitle">
+            {" "}
+            {category.title.split(" ").slice(1).join(" ")}
+          </span>
+        </h1>
+
+        {/* Сетка услуг */}
+        <div className="services-grid">
+          {services.map((service) => (
+            <Link
+              key={service.id}
+              to={`/services/${categoryId}/${service.id}`}
+              className="service-card"
+            >
+              <div className="service-image">
+                <img src={service.image} alt={service.title} />
+                <div className="service-overlay"></div>
+              </div>
+
+              <div className="service-content">
+                <h3 className="service-title">{service.title}</h3>
+                <p className="service-description">
+                  {service.shortDescription}
+                </p>
+
+                <div className="service-price">от {service.priceFrom} ₽</div>
+
+                <div className="service-button">Подробнее</div>
+              </div>
+            </Link>
+          ))}
+        </div>
+
+        {/* Общая информация о категории */}
+        <div className="category-info-section">
+          <h2>Почему выбирают наши услуги?</h2>
+          <div className="info-cards">
+            <div className="info-card">
+              <div className="info-icon">🛡️</div>
+              <h4>Гарантия качества</h4>
+              <p>Предоставляем гарантию на все виды работ до 2 лет</p>
+            </div>
+            <div className="info-card">
+              <div className="info-icon">🚗</div>
+              <h4>Бесплатный выезд</h4>
+              <p>Выезд мастера и диагностика бесплатно</p>
+            </div>
+            <div className="info-card">
+              <div className="info-icon">💰</div>
+              <h4>Фиксированные цены</h4>
+              <p>Стоимость не изменится после начала работ</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <Footer />
+    </div>
+  );
+};

@@ -1,0 +1,45 @@
+.dark-modal {
+  /* Базовый тёмный фон и текст, перекрываем возможные светлые utility-классы */
+  background-color: #13161b !important; /* gray-800 */
+  color: #e5e7eb !important;            /* gray-200 */
+  border: 1px solid #545e6d;            /* gray-700 */
+  box-shadow: 0 10px 25px rgba(51, 50, 50, 0.4)
+}
+
+.dark-modal header {
+  background: transparent;
+  border-bottom: 1px solid #374151;
+}
+
+.dark-modal footer {
+  background: transparent;
+  border-top: 1px solid #374151;
+}
+
+.dark-modal main {
+  background: transparent;
+  color: inherit;
+}
+
+.dark-modal button {
+  color: #e5e7eb;
+  background-color: transparent;
+  border: none;
+}
+
+.dark-modal button:hover {
+  background-color: #374151;
+  color: #ffffff;
+}
+
+.dark-modal button:focus-visible {
+  outline: 2px solid #60a5fa; /* sky-400 */
+  outline-offset: 2px;
+}
+
+/* Заголовки немного светлее для контраста */
+.dark-modal h1,
+.dark-modal h2,
+.dark-modal h3 {
+  color: #f3f4f6; /* gray-100 */
+}
