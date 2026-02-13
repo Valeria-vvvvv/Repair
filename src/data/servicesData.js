@@ -5,13 +5,30 @@ import { handymanServices } from "./categories/handyman";
 import { furnitureServices } from "./categories/furniture";
 import { windowsServices } from "./categories/windows";
 import { minorRepairServices } from "./categories/minorRepair";
+import { waterTanksServices } from "./categories/waterTanks";
 
 // Основные категории услуг
 export const SERVICES_CATEGORIES = {
+  handyman: {
+    id: "handyman",
+    title: "Услуга муж на час",
+    description: "Мелкий ремонт и бытовые услуги",
+    icon: "🔨",
+    image: "/assets/products/img3.jpg",
+    services: handymanServices,
+  },
+  water_tanks: {
+    id: "water_tanks",
+    title: "Установка накопительных баков автономного водоснабжения",
+    description: "Профессиональная установка систем автономного водоснабжения",
+    icon: "💧",
+    image: "/assets/products/service.jpg",
+    services: waterTanksServices,
+  },
   plumbing: {
     id: "plumbing",
     title: "Сантехнические работы",
-    description: "Профессиональные сантехнические услуги в Москве",
+    description: "Профессиональные сантехнические услуги в Донецке",
     icon: "🔧",
     image: "/assets/products/img1.jpg",
     services: plumbingServices,
@@ -23,14 +40,6 @@ export const SERVICES_CATEGORIES = {
     icon: "⚡",
     image: "/assets/products/img2.jpg",
     services: electricalServices,
-  },
-  handyman: {
-    id: "handyman",
-    title: "Услуга муж на час",
-    description: "Мелкий ремонт и бытовые услуги",
-    icon: "🔨",
-    image: "/assets/products/img3.jpg",
-    services: handymanServices,
   },
   furniture: {
     id: "furniture",
@@ -53,7 +62,7 @@ export const SERVICES_CATEGORIES = {
     title: "Мелкий ремонт в квартире",
     description: "Косметический ремонт и мелкие работы",
     icon: "🎨",
-    image: "/assets/products/img1.jpg",
+    image: "/assets/products/service-2.jpg",
     services: minorRepairServices,
   },
 };

@@ -7,14 +7,14 @@ export const electricalServices = [
     fullDescription:
       "Профессиональная установка розеток любых типов: обычные, с заземлением, USB-розетки. Соблюдаем все требования безопасности и нормы ПУЭ.",
     image: "/assets/products/img2.jpg",
-    priceFrom: 360,
+    priceFrom: 500,
     features: [
       "Установка внутренних и наружных розеток",
       "Монтаж розеток с заземлением",
       "Подключение с соблюдением ПУЭ",
       "Проверка работоспособности",
     ],
-    priceTable: [{ name: "Установка розеток", unit: "шт.", price: "360" }],
+    priceTable: [{ name: "Установка розеток", unit: "шт.", price: "500" }],
   },
   {
     id: "switch-installation",
@@ -23,14 +23,14 @@ export const electricalServices = [
     fullDescription:
       "Установка выключателей любых типов: одноклавишные, двухклавишные, проходные, диммеры. Качественный монтаж с гарантией.",
     image: "/assets/products/img2.jpg",
-    priceFrom: 360,
+    priceFrom: 500,
     features: [
       "Установка любых типов выключателей",
       "Монтаж диммеров",
       "Подключение проходных выключателей",
       "Проверка работы",
     ],
-    priceTable: [{ name: "Установка выключателей", unit: "шт.", price: "360" }],
+    priceTable: [{ name: "Установка выключателей", unit: "шт.", price: "500" }],
   },
   {
     id: "light-fixture-installation",
@@ -39,14 +39,16 @@ export const electricalServices = [
     fullDescription:
       "Установка потолочных, настенных и встраиваемых светильников. Работаем с LED, галогенными и другими типами освещения.",
     image: "/assets/products/img2.jpg",
-    priceFrom: 400,
+    priceFrom: 1000,
     features: [
       "Установка потолочных светильников",
       "Монтаж встраиваемых светильников",
       "Подключение LED-освещения",
       "Настройка яркости",
     ],
-    priceTable: [{ name: "Установка светильников", unit: "шт.", price: "400" }],
+    priceTable: [
+      { name: "Установка светильников", unit: "шт.", price: "1000" },
+    ],
   },
   {
     id: "chandelier-installation",
@@ -55,14 +57,14 @@ export const electricalServices = [
     fullDescription:
       "Профессиональная установка люстр любого веса и конфигурации. Надежное крепление к потолку, правильное подключение всех режимов освещения.",
     image: "/assets/products/img2.jpg",
-    priceFrom: 1500,
+    priceFrom: 2000,
     features: [
       "Установка люстр любого веса",
       "Крепление к бетонным и гипсокартонным потолкам",
       "Подключение многорежимного освещения",
       "Проверка всех режимов работы",
     ],
-    priceTable: [{ name: "Установка люстры", unit: "шт.", price: "1500" }],
+    priceTable: [{ name: "Установка люстры", unit: "шт.", price: "2000" }],
   },
   {
     id: "appliance-connection",
@@ -71,7 +73,7 @@ export const electricalServices = [
     fullDescription:
       "Профессиональное подключение стиральных машин, посудомоек, электроплит и другой бытовой техники с соблюдением норм безопасности.",
     image: "/assets/products/img2.jpg",
-    priceFrom: 1700,
+    priceFrom: 3000,
     features: [
       "Подключение с соблюдением норм безопасности",
       "Установка защитных автоматов",
@@ -79,7 +81,7 @@ export const electricalServices = [
       "Тестирование работы техники",
     ],
     priceTable: [
-      { name: "Подключение бытовой техники", unit: "шт.", price: "1700" },
+      { name: "Подключение бытовой техники", unit: "шт.", price: "3000" },
     ],
   },
   {
@@ -89,7 +91,7 @@ export const electricalServices = [
     fullDescription:
       "Полный цикл установки бытовой техники: распаковка, монтаж, подключение к электросети и коммуникациям, настройка и проверка работы.",
     image: "/assets/products/img2.jpg",
-    priceFrom: 1700,
+    priceFrom: 3000,
     features: [
       "Распаковка и установка",
       "Подключение к электросети",
@@ -97,7 +99,7 @@ export const electricalServices = [
       "Инструктаж по эксплуатации",
     ],
     priceTable: [
-      { name: "Установка бытовой техники", unit: "шт.", price: "1700" },
+      { name: "Установка бытовой техники", unit: "шт.", price: "3000" },
     ],
   },
   {
@@ -107,7 +109,7 @@ export const electricalServices = [
     fullDescription:
       "Установка электрических и индукционных варочных панелей. Врезка в столешницу, подключение к силовой линии, настройка и проверка работы.",
     image: "/assets/products/img2.jpg",
-    priceFrom: 1900,
+    priceFrom: 3000,
     features: [
       "Врезка в столешницу",
       "Подключение к силовой линии",
@@ -115,7 +117,7 @@ export const electricalServices = [
       "Проверка всех конфорок",
     ],
     priceTable: [
-      { name: "Установка варочной панели", unit: "шт.", price: "1900" },
+      { name: "Установка варочной панели", unit: "шт.", price: "3000" },
     ],
   },
   {
@@ -141,7 +143,7 @@ export const electricalServices = [
     fullDescription:
       "Установка проводных и беспроводных дверных звонков. Монтаж кнопки, подключение динамика, настройка громкости и мелодии.",
     image: "/assets/products/img2.jpg",
-    priceFrom: 700,
+    priceFrom: 1500,
     features: [
       "Установка проводных и беспроводных звонков",
       "Монтаж кнопки вызова",
@@ -149,7 +151,7 @@ export const electricalServices = [
       "Настройка громкости",
     ],
     priceTable: [
-      { name: "Установка дверного звонка", unit: "шт.", price: "700" },
+      { name: "Установка дверного звонка", unit: "шт.", price: "1500" },
     ],
   },
   {
@@ -169,29 +171,13 @@ export const electricalServices = [
     priceTable: [{ name: "Монтаж теплого пола", unit: "м²", price: "1000" }],
   },
   {
-    id: "wall-lamp-installation",
-    title: "Установка бра",
-    shortDescription: "Монтаж настенных светильников",
-    fullDescription:
-      "Установка настенных светильников (бра) в любых помещениях. Крепление к стене, подключение к электросети, установка выключателя.",
-    image: "/assets/products/img2.jpg",
-    priceFrom: 800,
-    features: [
-      "Крепление к любым типам стен",
-      "Подключение к электросети",
-      "Установка выключателя",
-      "Проверка работы",
-    ],
-    priceTable: [{ name: "Установка бра", unit: "шт.", price: "800" }],
-  },
-  {
     id: "electrical-repair",
     title: "Ремонт электрики",
     shortDescription: "Ремонт электропроводки и оборудования",
     fullDescription:
       "Диагностика и ремонт электропроводки, розеток, выключателей, светильников. Устранение неисправностей, замена поврежденных участков.",
     image: "/assets/products/img2.jpg",
-    priceFrom: 200,
+    priceFrom: 800,
     features: [
       "Диагностика неисправностей",
       "Ремонт проводки",
@@ -207,16 +193,14 @@ export const electricalServices = [
     fullDescription:
       "Бесплатный выезд электрика на объект для диагностики и оценки объема работ. При заказе услуг выезд не оплачивается.",
     image: "/assets/products/img2.jpg",
-    priceFrom: 0,
+    priceFrom: 1000,
     features: [
       "Бесплатный выезд",
       "Диагностика проблемы",
       "Оценка стоимости работ",
       "Консультация специалиста",
     ],
-    priceTable: [
-      { name: "Вызов электрика", unit: "услуга", price: "Бесплатно" },
-    ],
+    priceTable: [{ name: "Вызов электрика", unit: "услуга", price: "1000" }],
   },
   {
     id: "diagnostics-with-service",
@@ -365,14 +349,14 @@ export const electricalServices = [
     fullDescription:
       "Ремонт неисправных розеток: замена механизма, восстановление контактов, устранение искрения и нагрева. Быстро и качественно.",
     image: "/assets/products/img2.jpg",
-    priceFrom: 400,
+    priceFrom: 600,
     features: [
       "Диагностика неисправности",
       "Замена механизма",
       "Восстановление контактов",
       "Проверка безопасности",
     ],
-    priceTable: [{ name: "Ремонт розеток", unit: "шт.", price: "400" }],
+    priceTable: [{ name: "Ремонт розеток", unit: "шт.", price: "600" }],
   },
   {
     id: "switch-repair",
@@ -381,14 +365,14 @@ export const electricalServices = [
     fullDescription:
       "Ремонт неисправных выключателей: замена механизма, восстановление контактов, устранение искрения. Работаем с любыми типами выключателей.",
     image: "/assets/products/img2.jpg",
-    priceFrom: 400,
+    priceFrom: 600,
     features: [
       "Диагностика поломки",
       "Замена механизма",
       "Восстановление контактов",
       "Проверка работы",
     ],
-    priceTable: [{ name: "Ремонт выключателей", unit: "шт.", price: "400" }],
+    priceTable: [{ name: "Ремонт выключателей", unit: "шт.", price: "600" }],
   },
   {
     id: "grounding-installation",

@@ -1,15 +1,37 @@
 import React from "react";
-import { useParams, Link } from "react-router-dom";
+import { useParams, Link, useNavigate, useLocation } from "react-router-dom";
 import { useServicesByCategory, useServices } from "../hooks/useServices";
 import Footer from "../components/ui/Footer/Footer";
 import "./ServiceCategory.css";
 
 export const ServiceCategory = () => {
   const { categoryId } = useParams();
+  const navigate = useNavigate();
+  const location = useLocation();
   const { categories } = useServices();
   const { services, loading, error } = useServicesByCategory(categoryId);
 
   const category = categories[categoryId];
+
+  const handleOperatorClick = (e) => {
+    e.preventDefault();
+    if (location.pathname === "/") {
+      // Если на главной странице - просто скроллим
+      const element = document.querySelector("#contact");
+      if (element) {
+        element.scrollIntoView({ behavior: "smooth" });
+      }
+    } else {
+      // Если на другой странице - переходим на главную и скроллим
+      navigate("/");
+      setTimeout(() => {
+        const element = document.querySelector("#contact");
+        if (element) {
+          element.scrollIntoView({ behavior: "smooth" });
+        }
+      }, 100);
+    }
+  };
 
   if (loading) {
     return (
@@ -65,6 +87,51 @@ export const ServiceCategory = () => {
           </span>
         </h1>
 
+        {/* Плашка с оператором */}
+        <div className="operator-banner">
+          <div className="operator-banner-content">
+            <div className="operator-icon">
+              <div className="operator-avatar">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth={2}
+                    d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z"
+                  />
+                </svg>
+                <span className="online-indicator"></span>
+              </div>
+            </div>
+            <div className="operator-text">
+              <p className="operator-message">
+                Не нашли нужную услугу в списке? Свяжитесь с нашим оператором
+                для подробной консультации
+              </p>
+            </div>
+            <a
+              href="#contact"
+              className="operator-button"
+              onClick={handleOperatorClick}
+            >
+              <svg
+                className="chat-icon"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth={2}
+                  d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z"
+                />
+              </svg>
+              Связаться с оператором
+            </a>
+          </div>
+        </div>
+
         {/* Сетка услуг */}
         <div className="services-grid">
           {services.map((service) => (
@@ -84,7 +151,7 @@ export const ServiceCategory = () => {
                   {service.shortDescription}
                 </p>
 
-                <div className="service-price">от {service.priceFrom} ₽</div>
+                <div className="service-price">{service.priceFrom}</div>
 
                 <div className="service-button">Подробнее</div>
               </div>

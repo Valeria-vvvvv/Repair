@@ -24,14 +24,14 @@ export const handymanServices = [
     fullDescription:
       "Установка настенных шкафов на кухне, в ванной, прихожей. Надежное крепление с учетом типа стены и веса шкафа.",
     image: "/assets/products/img3.jpg",
-    priceFrom: 980,
+    priceFrom: 1500,
     features: [
       "Разметка уровня",
       "Установка крепежа",
       "Навеска шкафа",
       "Регулировка положения",
     ],
-    priceTable: [{ name: "Повесить шкаф", unit: "шт.", price: "980" }],
+    priceTable: [{ name: "Повесить шкаф", unit: "шт.", price: "1500" }],
     order: 2,
   },
   {
@@ -58,14 +58,14 @@ export const handymanServices = [
     fullDescription:
       "Укладка керамической плитки на стены и пол. Подготовка поверхности, выравнивание, затирка швов. Работаем с любыми типами плитки.",
     image: "/assets/products/img3.jpg",
-    priceFrom: 1600,
+    priceFrom: 2500,
     features: [
       "Подготовка основания",
       "Укладка с подгонкой",
       "Затирка швов",
       "Герметизация",
     ],
-    priceTable: [{ name: "Укладка плитки", unit: "м²", price: "1600" }],
+    priceTable: [{ name: "Укладка плитки", unit: "м²", price: "2500" }],
     order: 4,
   },
   {
@@ -109,14 +109,14 @@ export const handymanServices = [
     fullDescription:
       "Установка настенного или распорного турника в дверной проем. Надежное крепление с учетом нагрузки.",
     image: "/assets/products/img3.jpg",
-    priceFrom: 1900,
+    priceFrom: 2500,
     features: [
       "Выбор места установки",
       "Надежное крепление",
       "Проверка нагрузки",
       "Регулировка",
     ],
-    priceTable: [{ name: "Установка турника", unit: "шт.", price: "1900" }],
+    priceTable: [{ name: "Установка турника", unit: "шт.", price: "2500" }],
     order: 7,
   },
   {
@@ -164,14 +164,14 @@ export const handymanServices = [
     fullDescription:
       "Профессиональная навеска зеркал любого размера и веса. Подбор крепежа, точная разметка, надежная фиксация.",
     image: "/assets/products/img3.jpg",
-    priceFrom: 1400,
+    priceFrom: 2000,
     features: [
       "Подбор крепежа",
       "Разметка по уровню",
       "Надежная фиксация",
       "Проверка прочности",
     ],
-    priceTable: [{ name: "Навес зеркал", unit: "шт.", price: "1400" }],
+    priceTable: [{ name: "Навес зеркал", unit: "шт.", price: "2000" }],
     order: 10,
   },
   {

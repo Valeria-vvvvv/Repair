@@ -3,6 +3,13 @@ import "./HeroSection.css";
 import HeroForm from "../../forms/HeroForm/HeroForm";
 
 const HeroSection = () => {
+  const handleLearnMore = () => {
+    const element = document.getElementById("cases");
+    if (element) {
+      element.scrollIntoView({ behavior: "smooth" });
+    }
+  };
+
   return (
     <section className="hero-section">
       <video
@@ -24,7 +31,9 @@ const HeroSection = () => {
               смесителя до аварийной замены труб и монтажа гребенки
               водоснабжения в квартире, загородном доме или офисе.
             </p>
-            <button className="start-btn">ПОДРОБНЕЕ</button>
+            <button className="start-btn" onClick={handleLearnMore}>
+              ПОДРОБНЕЕ
+            </button>
           </div>
 
           <div className="hero-visual">

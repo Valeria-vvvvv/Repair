@@ -7,14 +7,14 @@ export const furnitureServices = [
     fullDescription:
       "Профессиональная сборка шкафов: распашных, угловых, встроенных. Работаем с любыми производителями. Имеем весь необходимый инструмент.",
     image: "/assets/products/img5.jpg",
-    priceFrom: 1980,
+    priceFrom: 2500,
     features: [
       "Сборка по инструкции",
       "Установка фурнитуры",
       "Регулировка дверей",
       "Крепление к стене",
     ],
-    priceTable: [{ name: "Сборка шкафа", unit: "шт.", price: "1980" }],
+    priceTable: [{ name: "Сборка шкафа", unit: "шт.", price: "2500" }],
     order: 1,
   },
   {
@@ -58,14 +58,14 @@ export const furnitureServices = [
     fullDescription:
       "Сборка комодов любых размеров и конфигураций. Установка направляющих, регулировка ящиков, монтаж фурнитуры.",
     image: "/assets/products/img5.jpg",
-    priceFrom: 2780,
+    priceFrom: 3500,
     features: [
       "Сборка корпуса",
       "Установка направляющих",
       "Регулировка ящиков",
       "Установка фурнитуры",
     ],
-    priceTable: [{ name: "Сборка комода", unit: "шт.", price: "2780" }],
+    priceTable: [{ name: "Сборка комода", unit: "шт.", price: "3500" }],
     order: 4,
   },
   {
@@ -75,14 +75,14 @@ export const furnitureServices = [
     fullDescription:
       "Сборка кроватей любых типов: односпальные, двуспальные, с подъемным механизмом. Установка изголовья, ножек, механизмов.",
     image: "/assets/products/img5.jpg",
-    priceFrom: 2580,
+    priceFrom: 3500,
     features: [
       "Сборка каркаса",
       "Установка изголовья",
       "Монтаж механизмов",
       "Установка ножек",
     ],
-    priceTable: [{ name: "Сборка кровати", unit: "шт.", price: "2580" }],
+    priceTable: [{ name: "Сборка кровати", unit: "шт.", price: "3500" }],
     order: 5,
   },
   {
@@ -109,14 +109,14 @@ export const furnitureServices = [
     fullDescription:
       "Сборка диванов любых конфигураций: прямые, угловые, раскладные. Установка механизмов трансформации, ножек, подлокотников.",
     image: "/assets/products/img5.jpg",
-    priceFrom: 3180,
+    priceFrom: 7000,
     features: [
       "Сборка каркаса",
       "Установка механизмов",
       "Монтаж подлокотников",
       "Проверка трансформации",
     ],
-    priceTable: [{ name: "Сборка дивана", unit: "шт.", price: "3180" }],
+    priceTable: [{ name: "Сборка дивана", unit: "шт.", price: "7000" }],
     order: 7,
   },
   {

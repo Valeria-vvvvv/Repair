@@ -36,7 +36,7 @@ const HeroForm = () => {
         phone: formData.phone,
         surname: "", // пустое поле для совместимости
         email: "", // пустое поле для совместимости
-        comment: "Заявка с главной страницы (скидка до 20%)",
+        comment: "Заявка с главной страницы",
         source: "hero_form",
       };
 
@@ -76,9 +76,7 @@ const HeroForm = () => {
 
   return (
     <form className="hero-form" onSubmit={handleSubmit}>
-      <h3 className="hero-form__title">
-        Оставьте заявку и получите скидку до 20%
-      </h3>
+      <h3 className="hero-form__title">Оставьте заявку</h3>
 
       <input
         className="hero-form__field"

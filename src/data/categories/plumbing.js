@@ -7,14 +7,14 @@ export const plumbingServices = [
     fullDescription:
       "Профессиональная установка раковин в ванной комнате и на кухне. Работаем с любыми типами раковин.",
     image: "/assets/products/img1.jpg",
-    priceFrom: 2400,
+    priceFrom: 5000,
     features: [
       "Демонтаж старой раковины",
       "Установка новой раковины",
       "Подключение к коммуникациям",
       "Герметизация соединений",
     ],
-    priceTable: [{ name: "Установка раковины", unit: "шт.", price: "2400" }],
+    priceTable: [{ name: "Установка раковины", unit: "шт.", price: "5000" }],
   },
   {
     id: "sink-removal",
@@ -37,13 +37,13 @@ export const plumbingServices = [
     fullDescription:
       "Установка кухонных моек из нержавейки, керамики и других материалов.",
     image: "/assets/products/img1.jpg",
-    priceFrom: 1300,
+    priceFrom: 3000,
     features: [
       "Врезка в столешницу",
       "Подключение к канализации",
       "Установка смесителя",
     ],
-    priceTable: [{ name: "Монтаж мойки", unit: "шт.", price: "1300" }],
+    priceTable: [{ name: "Монтаж мойки", unit: "шт.", price: "3000" }],
   },
   {
     id: "kitchen-sink-removal",
@@ -66,13 +66,13 @@ export const plumbingServices = [
     fullDescription:
       "Установка смесителей для кухни, ванной, душа с гарантией герметичности.",
     image: "/assets/products/img1.jpg",
-    priceFrom: 1300,
+    priceFrom: 2000,
     features: [
       "Подключение к водопроводу",
       "Настройка температуры",
       "Проверка на протечки",
     ],
-    priceTable: [{ name: "Установка смесителя", unit: "шт.", price: "1300" }],
+    priceTable: [{ name: "Установка смесителя", unit: "шт.", price: "2000" }],
   },
   {
     id: "faucet-repair",
@@ -106,13 +106,13 @@ export const plumbingServices = [
     fullDescription:
       "Установка чугунных, акриловых, стальных ванн с подключением к коммуникациям.",
     image: "/assets/products/img1.jpg",
-    priceFrom: 3200,
+    priceFrom: 7000,
     features: [
       "Установка на ножки",
       "Подключение слива",
       "Герметизация стыков",
     ],
-    priceTable: [{ name: "Установка ванны", unit: "шт.", price: "3200" }],
+    priceTable: [{ name: "Установка ванны", unit: "шт.", price: "7000" }],
   },
   {
     id: "bathtub-leak-repair",
@@ -121,10 +121,10 @@ export const plumbingServices = [
     fullDescription:
       "Поиск и устранение протечек под ванной, замена уплотнителей.",
     image: "/assets/products/img1.jpg",
-    priceFrom: 1180,
+    priceFrom: 1500,
     features: ["Диагностика протечки", "Замена уплотнителей", "Герметизация"],
     priceTable: [
-      { name: "Устранение протечек под ванной", unit: "шт.", price: "1180" },
+      { name: "Устранение протечек под ванной", unit: "шт.", price: "1500" },
     ],
   },
   {
@@ -151,13 +151,13 @@ export const plumbingServices = [
     fullDescription:
       "Установка сифонов для раковин, моек, ванн с подключением к канализации.",
     image: "/assets/products/img1.jpg",
-    priceFrom: 1000,
+    priceFrom: 2000,
     features: [
       "Подключение к канализации",
       "Герметизация соединений",
       "Проверка слива",
     ],
-    priceTable: [{ name: "Установка сифона", unit: "шт.", price: "1000" }],
+    priceTable: [{ name: "Установка сифона", unit: "шт.", price: "2000" }],
   },
   {
     id: "shower-cabin-installation",
@@ -165,10 +165,10 @@ export const plumbingServices = [
     shortDescription: "Монтаж душевых кабин",
     fullDescription: "Установка душевых кабин любых размеров и конфигураций.",
     image: "/assets/products/img1.jpg",
-    priceFrom: 3200,
+    priceFrom: 8000,
     features: ["Сборка кабины", "Подключение к коммуникациям", "Герметизация"],
     priceTable: [
-      { name: "Установка душевой кабины", unit: "шт.", price: "3200" },
+      { name: "Установка душевой кабины", unit: "шт.", price: "8000" },
     ],
   },
   {
@@ -178,14 +178,14 @@ export const plumbingServices = [
     fullDescription:
       "Установка душевых поддонов из акрила, керамики, искусственного камня.",
     image: "/assets/products/img1.jpg",
-    priceFrom: 4000,
+    priceFrom: 10000,
     features: [
       "Выравнивание основания",
       "Установка поддона",
       "Подключение слива",
     ],
     priceTable: [
-      { name: "Устройство душевого поддона", unit: "шт.", price: "4000" },
+      { name: "Устройство душевого поддона", unit: "шт.", price: "10000" },
     ],
   },
   {
@@ -236,9 +236,9 @@ export const plumbingServices = [
     fullDescription:
       "Установка писсуаров в офисах, общественных местах, частных домах.",
     image: "/assets/products/img1.jpg",
-    priceFrom: 2800,
+    priceFrom: 4000,
     features: ["Крепление к стене", "Подключение воды", "Подключение слива"],
-    priceTable: [{ name: "Установка писсуара", unit: "шт.", price: "2800" }],
+    priceTable: [{ name: "Установка писсуара", unit: "шт.", price: "4000" }],
   },
   {
     id: "toilet-corrugation",
@@ -325,7 +325,7 @@ export const plumbingServices = [
     fullDescription:
       "Установка электрических полотенцесушителей с подключением к сети.",
     image: "/assets/products/img1.jpg",
-    priceFrom: 2400,
+    priceFrom: 3000,
     features: [
       "Подключение к электросети",
       "Крепление к стене",
@@ -335,7 +335,7 @@ export const plumbingServices = [
       {
         name: "Установка электрического полотенцесушителя",
         unit: "шт.",
-        price: "2400",
+        price: "3000",
       },
     ],
   },
@@ -376,14 +376,14 @@ export const plumbingServices = [
     fullDescription:
       "Установка накопительных и проточных водонагревателей с подключением.",
     image: "/assets/products/img1.jpg",
-    priceFrom: 2600,
+    priceFrom: 1000,
     features: [
       "Крепление к стене",
       "Подключение воды",
       "Подключение электричества",
     ],
     priceTable: [
-      { name: "Монтаж водонагревателя", unit: "шт.", price: "2600" },
+      { name: "Монтаж водонагревателя", unit: "шт.", price: "1000" },
     ],
   },
 ];

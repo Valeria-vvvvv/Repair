@@ -192,7 +192,7 @@ export const minorRepairServices = [
     fullDescription:
       "Установка телевизора на стену с помощью кронштейна. Скрытая прокладка кабелей. Настройка угла наклона.",
     image: "/assets/products/img1.jpg",
-    priceFrom: 600,
+    priceFrom: 1500,
     features: [
       "Установка кронштейна",
       "Монтаж телевизора",
@@ -200,7 +200,7 @@ export const minorRepairServices = [
       "Настройка положения",
     ],
     priceTable: [
-      { name: "Установка телевизора на стену", unit: "шт.", price: "600" },
+      { name: "Установка телевизора на стену", unit: "шт.", price: "1500" },
     ],
     order: 11,
   },

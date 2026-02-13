@@ -510,7 +510,7 @@
 /* Адаптивность */
 @media (max-width: 768px) {
   .service-details-page {
-    padding: 100px 0 0 0;
+    padding: 140px 0 0 0;
   }
 
   .service-container {

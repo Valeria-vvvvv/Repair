@@ -33,14 +33,44 @@
   flex-shrink: 0;
 }
 
+.logo a {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  text-decoration: none;
+}
+
 .logo img {
   height: 70px !important;
   width: auto;
   transition: height 0.3s ease;
 }
 
+.logo-text {
+  font-size: 20px;
+  font-weight: 900;
+  color: white;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  line-height: 1.1;
+  transition: font-size 0.3s ease;
+}
+
+.logo-text-small {
+  font-size: 19px;
+  font-weight: 400;
+}
+
 .fixed-header.scrolled .logo img {
   height: 40px;
+}
+
+.fixed-header.scrolled .logo-text {
+  font-size: 16px;
+}
+
+.fixed-header.scrolled .logo-text-small {
+  font-size: 13px;
 }
 
 .header-phone {
@@ -192,8 +222,29 @@ button.nav-btn {
 }
 
 @media (max-width: 768px) {
+  .header-phone {
+    position: relative;
+    cursor: pointer;
+  }
+
   .header-phone .phone-wrapper {
     display: none;
+    position: absolute;
+    top: 100%;
+    right: 0;
+    background: rgba(0, 0, 0, 0.95);
+    backdrop-filter: blur(20px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 12px;
+    padding: 15px 20px;
+    margin-top: 10px;
+    white-space: nowrap;
+    z-index: 1000;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+  }
+
+  .header-phone.active .phone-wrapper {
+    display: flex;
   }
 
   .header-phone::after {
@@ -207,6 +258,12 @@ button.nav-btn {
     height: 40px;
     border: 1px solid rgba(255, 255, 255, 0.2);
     border-radius: 50%;
+    transition: all 0.3s ease;
+  }
+
+  .header-phone.active::after {
+    background: rgba(0, 123, 255, 0.2);
+    border-color: #007bff;
   }
 
   .hamburger {
@@ -238,6 +295,10 @@ button.nav-btn {
     margin-bottom: 10px;
     border-radius: 8px;
   }
+
+  .services-btn {
+    justify-content: center;
+  }
 }
 
 @media (max-width: 480px) {
@@ -250,8 +311,24 @@ button.nav-btn {
     height: 30px;
   }
 
+  .logo-text {
+    font-size: 14px;
+  }
+
+  .logo-text-small {
+    font-size: 11px;
+  }
+
   .fixed-header.scrolled .logo img {
     height: 25px;
+  }
+
+  .fixed-header.scrolled .logo-text {
+    font-size: 12px;
+  }
+
+  .fixed-header.scrolled .logo-text-small {
+    font-size: 10px;
   }
 }
 /* Стили для выпадающего меню услуг */

@@ -12,28 +12,40 @@ const NAV_ITEMS = [
 // Услуги для выпадающего меню - новая структура услуг (точно как у конкурентов)
 const SERVICES_MENU = [
   {
+    id: "handyman",
+    title: "Услуга муж на час",
+    type: "category", // обычная категория
+  },
+  {
+    id: "water_tanks",
+    title: "Установка накопительных баков автономного водоснабжения",
+    type: "direct", // прямая ссылка на услугу
+    serviceId: "water-tank-installation",
+  },
+  {
     id: "plumbing",
     title: "Сантехнические работы",
+    type: "category",
   },
   {
     id: "electrical",
     title: "Электромонтажные работы",
-  },
-  {
-    id: "handyman",
-    title: "Услуга муж на час",
+    type: "category",
   },
   {
     id: "furniture",
     title: "Сборка разборка мебели",
+    type: "category",
   },
   {
     id: "windows",
     title: "Ремонт пластиковых окон",
+    type: "category",
   },
   {
     id: "minor_repair",
     title: "Мелкий ремонт в квартире",
+    type: "category",
   },
 ];
 
@@ -41,6 +53,7 @@ const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
   const [isServicesOpen, setIsServicesOpen] = useState(false);
+  const [isPhoneOpen, setIsPhoneOpen] = useState(false);
   const navigate = useNavigate();
   const location = useLocation();
 
@@ -81,10 +94,18 @@ const Header = () => {
         <div className="logo">
           <Link to="/">
             <img src="/assets/header/plumber.png" alt="plumber Logo" />
+            <span className="logo-text">
+              СТРОЙ
+              <br />
+              <span className="logo-text-small">НЕ САМ</span>
+            </span>
           </Link>
         </div>
 
-        <div className="header-phone">
+        <div
+          className={`header-phone ${isPhoneOpen ? "active" : ""}`}
+          onClick={() => setIsPhoneOpen(!isPhoneOpen)}
+        >
           <div className="phone-wrapper">
             <a href="tel:+74993946409" className="phone-link">
               <svg
@@ -148,7 +169,11 @@ const Header = () => {
                   {SERVICES_MENU.map((service) => (
                     <Link
                       key={service.id}
-                      to={`/services/${service.id}`}
+                      to={
+                        service.type === "direct"
+                          ? `/services/${service.id}/${service.serviceId}`
+                          : `/services/${service.id}`
+                      }
                       className="service-item"
                       onClick={() => setIsServicesOpen(false)}
                     >

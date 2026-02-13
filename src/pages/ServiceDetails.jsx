@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import { useParams, Link } from "react-router-dom";
 import { useService } from "../hooks/useServices";
-import { Icon } from "../components/ui/Icon/Icon";
 import Footer from "../components/ui/Footer/Footer";
 import ContactForm from "../components/forms/ContactForm/ContactForm";
 import "./ServiceDetails.css";
@@ -114,7 +113,7 @@ export const ServiceDetails = () => {
           <h1 className="service-title">{service.title}</h1>
         </div>
 
-        {/* Блок с фото и описанием */}
+        {/* Блок с фото и кратким описанием */}
         <div className="service-intro">
           <div className="service-intro-image">
             <img
@@ -126,14 +125,22 @@ export const ServiceDetails = () => {
           <div className="service-intro-content">
             <h2 className="service-intro-title">{service.title}</h2>
             <div className="service-intro-description">
-              <p>{service.fullDescription}</p>
+              <p>{service.description}</p>
             </div>
             <div className="service-price-info">
-              <span className="price-label">Стоимость от:</span>
-              <span className="price-value">{service.priceFrom} ₽</span>
+              <span className="price-label">Стоимость:</span>
+              <span className="price-value">{service.priceFrom}</span>
             </div>
           </div>
         </div>
+
+        {/* Детальное описание в отдельных блоках */}
+        {service.fullDescription && (
+          <div
+            className="service-detailed-content"
+            dangerouslySetInnerHTML={{ __html: service.fullDescription }}
+          />
+        )}
 
         {/* Основное описание */}
         <div className="service-content">
@@ -174,25 +181,19 @@ export const ServiceDetails = () => {
           <div className="additional-info">
             <div className="info-cards">
               <div className="info-card">
-                <div className="info-icon">
-                  <Icon name="shield" />
-                </div>
+                <div className="info-icon">🛡️</div>
                 <h4>Гарантия качества</h4>
                 <p>Предоставляем гарантию на все виды работ до 2 лет</p>
               </div>
 
               <div className="info-card">
-                <div className="info-icon">
-                  <Icon name="car" />
-                </div>
+                <div className="info-icon">🚗</div>
                 <h4>Бесплатный выезд</h4>
                 <p>Выезд мастера и диагностика бесплатно</p>
               </div>
 
               <div className="info-card">
-                <div className="info-icon">
-                  <Icon name="money" />
-                </div>
+                <div className="info-icon">💰</div>
                 <h4>Фиксированные цены</h4>
                 <p>Стоимость не изменится после начала работ</p>
               </div>

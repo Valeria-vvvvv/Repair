@@ -48,23 +48,8 @@
   height: 24px;
 }
 
-.social-link.instagram {
-  background: linear-gradient(
-    45deg,
-    #f09433 0%,
-    #e6683c 25%,
-    #dc2743 50%,
-    #cc2366 75%,
-    #bc1888 100%
-  );
-}
-
-.social-link.facebook {
-  background: #1877f2;
-}
-
-.social-link.vk {
-  background: #0077ff;
+.social-link.telegram {
+  background: linear-gradient(135deg, #0088cc 0%, #229ed9 100%);
 }
 
 .social-link:hover {
@@ -123,6 +108,29 @@
   justify-content: center;
 }
 
+.footer-contact {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.footer-phone {
+  color: #007bff;
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: 600;
+  transition: color 0.3s ease;
+}
+
+.footer-phone:hover {
+  color: #0056b3;
+}
+
+.footer-location {
+  color: rgba(255, 255, 255, 0.7);
+  font-size: 14px;
+}
+
 .footer-3d {
   position: relative;
   width: 120px;
@@ -134,7 +142,8 @@
   height: 120px;
   border-radius: 50%;
   background: linear-gradient(135deg, #333 0%, #666 50%, #999 100%);
-  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.4),
+  box-shadow:
+    0 15px 30px rgba(0, 0, 0, 0.4),
     inset -15px -15px 30px rgba(0, 0, 0, 0.3),
     inset 15px 15px 30px rgba(255, 255, 255, 0.1);
   animation: footerFloat 8s ease-in-out infinite;
