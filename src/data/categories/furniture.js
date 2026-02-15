@@ -6,7 +6,7 @@ export const furnitureServices = [
     shortDescription: "Сборка шкафов любых типов",
     fullDescription:
       "Профессиональная сборка шкафов: распашных, угловых, встроенных. Работаем с любыми производителями. Имеем весь необходимый инструмент.",
-    image: "/assets/products/img5.jpg",
+    image: "/assets/products/img4.jpg",
     priceFrom: 2500,
     features: [
       "Сборка по инструкции",
@@ -23,7 +23,7 @@ export const furnitureServices = [
     shortDescription: "Сборка кухонных гарнитуров",
     fullDescription:
       "Сборка кухонных гарнитуров любой сложности. Установка навесных и напольных шкафов, столешницы, фартука. Врезка мойки и варочной панели.",
-    image: "/assets/products/img5.jpg",
+    image: "/assets/products/img4.jpg",
     priceFrom: 3200,
     features: [
       "Сборка модулей",
@@ -40,7 +40,7 @@ export const furnitureServices = [
     shortDescription: "Сборка шкафов-купе",
     fullDescription:
       "Сборка шкафов-купе любых размеров. Установка раздвижной системы, регулировка дверей, монтаж внутреннего наполнения.",
-    image: "/assets/products/img5.jpg",
+    image: "/assets/products/img4.jpg",
     priceFrom: 3780,
     features: [
       "Сборка каркаса",
@@ -57,7 +57,7 @@ export const furnitureServices = [
     shortDescription: "Сборка комодов",
     fullDescription:
       "Сборка комодов любых размеров и конфигураций. Установка направляющих, регулировка ящиков, монтаж фурнитуры.",
-    image: "/assets/products/img5.jpg",
+    image: "/assets/products/img4.jpg",
     priceFrom: 3500,
     features: [
       "Сборка корпуса",
@@ -74,7 +74,7 @@ export const furnitureServices = [
     shortDescription: "Сборка кроватей",
     fullDescription:
       "Сборка кроватей любых типов: односпальные, двуспальные, с подъемным механизмом. Установка изголовья, ножек, механизмов.",
-    image: "/assets/products/img5.jpg",
+    image: "/assets/products/img4.jpg",
     priceFrom: 3500,
     features: [
       "Сборка каркаса",
@@ -91,7 +91,7 @@ export const furnitureServices = [
     shortDescription: "Сборка столов",
     fullDescription:
       "Сборка столов любых типов: обеденные, письменные, компьютерные, журнальные. Установка столешницы, ножек, выдвижных элементов.",
-    image: "/assets/products/img5.jpg",
+    image: "/assets/products/img4.jpg",
     priceFrom: 1980,
     features: [
       "Сборка каркаса",
@@ -108,7 +108,7 @@ export const furnitureServices = [
     shortDescription: "Сборка диванов",
     fullDescription:
       "Сборка диванов любых конфигураций: прямые, угловые, раскладные. Установка механизмов трансформации, ножек, подлокотников.",
-    image: "/assets/products/img5.jpg",
+    image: "/assets/products/img4.jpg",
     priceFrom: 7000,
     features: [
       "Сборка каркаса",
@@ -125,7 +125,7 @@ export const furnitureServices = [
     shortDescription: "Разборка мебели для переезда",
     fullDescription:
       "Аккуратная разборка мебели для переезда или утилизации. Упаковка деталей, маркировка крепежа, подготовка к транспортировке.",
-    image: "/assets/products/img5.jpg",
+    image: "/assets/products/img4.jpg",
     priceFrom: 2780,
     features: [
       "Аккуратная разборка",

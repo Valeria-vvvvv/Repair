@@ -7,7 +7,7 @@ export const minorRepairServices = [
     shortDescription: "Навешивание картин и фоторамок",
     fullDescription:
       "Профессиональное навешивание картин, фоторамок, постеров на стену. Подбор крепежа под тип стены. Выравнивание по уровню.",
-    image: "/assets/products/img1.jpg",
+    image: "/assets/products/img6.jpg",
     priceFrom: 700,
     features: [
       "Подбор крепежа",
@@ -25,7 +25,7 @@ export const minorRepairServices = [
     shortDescription: "Навешивание настенных шкафов",
     fullDescription:
       "Навешивание настенных шкафов на кухне, в ванной, прихожей. Надежное крепление с учетом типа стены и веса шкафа.",
-    image: "/assets/products/img1.jpg",
+    image: "/assets/products/img6.jpg",
     priceFrom: 980,
     features: [
       "Разметка по уровню",
@@ -43,7 +43,7 @@ export const minorRepairServices = [
     shortDescription: "Оклейка стен обоями",
     fullDescription:
       "Профессиональная поклейка обоев любого типа: бумажные, виниловые, флизелиновые. Подготовка стен, подгонка рисунка.",
-    image: "/assets/products/img1.jpg",
+    image: "/assets/products/img6.jpg",
     priceFrom: 400,
     features: [
       "Подготовка поверхности",
@@ -61,7 +61,7 @@ export const minorRepairServices = [
     shortDescription: "Укладка керамической плитки",
     fullDescription:
       "Укладка керамической плитки на пол и стены. Подготовка основания, выравнивание, затирка швов. Работаем с любыми форматами.",
-    image: "/assets/products/img1.jpg",
+    image: "/assets/products/img6.jpg",
     priceFrom: 1600,
     features: [
       "Подготовка основания",
@@ -79,7 +79,7 @@ export const minorRepairServices = [
     shortDescription: "Монтаж ламинированного покрытия",
     fullDescription:
       "Укладка ламината с подложкой. Подготовка основания, подрезка, установка плинтусов. Гарантия качества.",
-    image: "/assets/products/img1.jpg",
+    image: "/assets/products/img6.jpg",
     priceFrom: 600,
     features: [
       "Подготовка основания",
@@ -97,7 +97,7 @@ export const minorRepairServices = [
     shortDescription: "Настил линолеума на пол",
     fullDescription:
       "Укладка линолеума на пол. Подготовка основания, раскрой, приклеивание, установка плинтусов.",
-    image: "/assets/products/img1.jpg",
+    image: "/assets/products/img6.jpg",
     priceFrom: 400,
     features: [
       "Подготовка пола",
@@ -115,7 +115,7 @@ export const minorRepairServices = [
     shortDescription: "Монтаж карнизов",
     fullDescription:
       "Установка карнизов для штор: настенных, потолочных, струнных. Подбор крепежа, выравнивание по уровню.",
-    image: "/assets/products/img1.jpg",
+    image: "/assets/products/img6.jpg",
     priceFrom: 960,
     features: [
       "Разметка по уровню",
@@ -135,7 +135,7 @@ export const minorRepairServices = [
     shortDescription: "Монтаж рулонных штор",
     fullDescription:
       "Установка рулонных жалюзи на окна. Крепление на раму или стену. Настройка механизма управления.",
-    image: "/assets/products/img1.jpg",
+    image: "/assets/products/img6.jpg",
     priceFrom: 900,
     features: [
       "Замер окна",
@@ -155,7 +155,7 @@ export const minorRepairServices = [
     shortDescription: "Навешивание зеркал на стену",
     fullDescription:
       "Профессиональное навешивание зеркал на стену. Надежное крепление с учетом веса и размера зеркала.",
-    image: "/assets/products/img1.jpg",
+    image: "/assets/products/img6.jpg",
     priceFrom: 1400,
     features: [
       "Подбор крепежа",
@@ -173,7 +173,7 @@ export const minorRepairServices = [
     shortDescription: "Навешивание полок",
     fullDescription:
       "Навешивание полок на стену: деревянных, стеклянных, металлических. Надежное крепление, выравнивание по уровню.",
-    image: "/assets/products/img1.jpg",
+    image: "/assets/products/img6.jpg",
     priceFrom: 700,
     features: [
       "Разметка положения",
@@ -191,7 +191,7 @@ export const minorRepairServices = [
     shortDescription: "Монтаж ТВ на стену",
     fullDescription:
       "Установка телевизора на стену с помощью кронштейна. Скрытая прокладка кабелей. Настройка угла наклона.",
-    image: "/assets/products/img1.jpg",
+    image: "/assets/products/img6.jpg",
     priceFrom: 1500,
     features: [
       "Установка кронштейна",
@@ -211,7 +211,7 @@ export const minorRepairServices = [
     shortDescription: "Монтаж напольных плинтусов",
     fullDescription:
       "Установка напольных плинтусов: пластиковых, деревянных, МДФ. Подрезка углов, крепление, установка заглушек.",
-    image: "/assets/products/img1.jpg",
+    image: "/assets/products/img6.jpg",
     priceFrom: 360,
     features: [
       "Замер периметра",
@@ -229,7 +229,7 @@ export const minorRepairServices = [
     shortDescription: "Монтаж напольных порожков",
     fullDescription:
       "Установка порожков между комнатами и на стыках напольных покрытий. Подрезка по размеру, крепление.",
-    image: "/assets/products/img1.jpg",
+    image: "/assets/products/img6.jpg",
     priceFrom: 500,
     features: [
       "Замер проема",

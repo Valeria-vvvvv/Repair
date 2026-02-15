@@ -6,6 +6,7 @@ import { furnitureServices } from "./categories/furniture";
 import { windowsServices } from "./categories/windows";
 import { minorRepairServices } from "./categories/minorRepair";
 import { waterTanksServices } from "./categories/waterTanks";
+import { turnkeyRepairServices } from "./categories/turnkeyRepair";
 
 // Основные категории услуг
 export const SERVICES_CATEGORIES = {
@@ -24,6 +25,14 @@ export const SERVICES_CATEGORIES = {
     icon: "💧",
     image: "/assets/products/service.jpg",
     services: waterTanksServices,
+  },
+  turnkey_repair: {
+    id: "turnkey_repair",
+    title: "Ремонт с 0 под ключ",
+    description: "Полный цикл работ от черновой отделки до сдачи под ключ",
+    icon: "🏠",
+    image: "/assets/products/service-2.jpg",
+    services: turnkeyRepairServices,
   },
   plumbing: {
     id: "plumbing",

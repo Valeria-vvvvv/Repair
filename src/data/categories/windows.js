@@ -7,7 +7,7 @@ export const windowsServices = [
     shortDescription: "Регулировка и смазка окон",
     fullDescription:
       "Профессиональная регулировка створки окна с полной смазкой фурнитуры. Устранение провисания, скрипа, затрудненного открывания.",
-    image: "/assets/products/img6.jpg",
+    image: "/assets/products/img5.jpg",
     priceFrom: 600,
     features: [
       "Регулировка по всем осям",
@@ -31,7 +31,7 @@ export const windowsServices = [
     shortDescription: "Регулировка балконных дверей",
     fullDescription:
       "Регулировка балконной двери: устранение провисания, настройка прижима, смазка фурнитуры. Восстановление плавного хода.",
-    image: "/assets/products/img6.jpg",
+    image: "/assets/products/img5.jpg",
     priceFrom: 1380,
     features: [
       "Устранение провисания",
@@ -51,7 +51,7 @@ export const windowsServices = [
     shortDescription: "Восстановление геометрии окна",
     fullDescription:
       "Восстановление правильной геометрии створки окна. Устранение перекосов, выравнивание, настройка работы механизмов.",
-    image: "/assets/products/img6.jpg",
+    image: "/assets/products/img5.jpg",
     priceFrom: 900,
     features: [
       "Выявление перекосов",
@@ -75,7 +75,7 @@ export const windowsServices = [
     shortDescription: "Восстановление геометрии двери",
     fullDescription:
       "Восстановление геометрии балконной двери. Устранение перекосов, выравнивание полотна, настройка фурнитуры.",
-    image: "/assets/products/img6.jpg",
+    image: "/assets/products/img5.jpg",
     priceFrom: 1600,
     features: [
       "Диагностика перекосов",
@@ -99,7 +99,7 @@ export const windowsServices = [
     shortDescription: "Замена стеклопакетов",
     fullDescription:
       "Замена однокамерного стеклопакета. Демонтаж старого, установка нового с герметизацией. Работаем с любыми размерами.",
-    image: "/assets/products/img6.jpg",
+    image: "/assets/products/img5.jpg",
     priceFrom: 7000,
     features: [
       "Демонтаж старого стеклопакета",
@@ -123,7 +123,7 @@ export const windowsServices = [
     shortDescription: "Замена двухкамерных стеклопакетов",
     fullDescription:
       "Замена двухкамерного стеклопакета. Повышенная тепло- и звукоизоляция. Профессиональный монтаж с гарантией.",
-    image: "/assets/products/img6.jpg",
+    image: "/assets/products/img5.jpg",
     priceFrom: 8000,
     features: [
       "Демонтаж старого",
@@ -147,7 +147,7 @@ export const windowsServices = [
     shortDescription: "Замена разбитого стекла",
     fullDescription:
       "Замена разбитого или треснувшего стекла толщиной 4-6 мм. Быстрый монтаж с герметизацией.",
-    image: "/assets/products/img6.jpg",
+    image: "/assets/products/img5.jpg",
     priceFrom: 5000,
     features: [
       "Демонтаж разбитого стекла",
@@ -165,7 +165,7 @@ export const windowsServices = [
     shortDescription: "Замена оконных ручек",
     fullDescription:
       "Замена оконной ручки белого цвета. Установка качественной фурнитуры с гарантией.",
-    image: "/assets/products/img6.jpg",
+    image: "/assets/products/img5.jpg",
     priceFrom: 600,
     features: [
       "Демонтаж старой ручки",
@@ -185,7 +185,7 @@ export const windowsServices = [
     shortDescription: "Замена цветных ручек",
     fullDescription:
       "Замена оконной ручки цветной (под дерево, золото, серебро). Широкий выбор цветов и дизайнов.",
-    image: "/assets/products/img6.jpg",
+    image: "/assets/products/img5.jpg",
     priceFrom: 1000,
     features: [
       "Подбор цвета",
@@ -205,7 +205,7 @@ export const windowsServices = [
     shortDescription: "Установка детских замков",
     fullDescription:
       "Установка детского замка на окно для безопасности детей. Блокировка открывания створки в режиме проветривания.",
-    image: "/assets/products/img6.jpg",
+    image: "/assets/products/img5.jpg",
     priceFrom: 1600,
     features: [
       "Установка замка",
@@ -223,7 +223,7 @@ export const windowsServices = [
     shortDescription: "Установка ручек с замком",
     fullDescription:
       "Установка оконной ручки с ключом. Защита от несанкционированного открывания и безопасность для детей.",
-    image: "/assets/products/img6.jpg",
+    image: "/assets/products/img5.jpg",
     priceFrom: 1800,
     features: [
       "Установка ручки с замком",
@@ -241,7 +241,7 @@ export const windowsServices = [
     shortDescription: "Замена оконных петель",
     fullDescription:
       "Замена изношенных или сломанных петель на окнах и дверях ПВХ. Восстановление плавного хода створки.",
-    image: "/assets/products/img6.jpg",
+    image: "/assets/products/img5.jpg",
     priceFrom: 1200,
     features: [
       "Демонтаж старых петель",
@@ -265,7 +265,7 @@ export const windowsServices = [
     shortDescription: "Замена резинового уплотнителя",
     fullDescription:
       "Замена изношенного уплотнителя на окнах. Восстановление герметичности, устранение продувания и промерзания.",
-    image: "/assets/products/img6.jpg",
+    image: "/assets/products/img5.jpg",
     priceFrom: 500,
     features: [
       "Демонтаж старого уплотнителя",
@@ -283,7 +283,7 @@ export const windowsServices = [
     shortDescription: "Установка москитных сеток",
     fullDescription:
       "Изготовление москитных сеток по размерам окна. Установка на крепления. Защита от насекомых.",
-    image: "/assets/products/img6.jpg",
+    image: "/assets/products/img5.jpg",
     priceFrom: 2400,
     features: [
       "Замер окна",
@@ -307,7 +307,7 @@ export const windowsServices = [
     shortDescription: "Ремонт поврежденных сеток",
     fullDescription:
       "Ремонт москитных сеток: замена полотна, ремонт рамки, замена креплений. Восстановление функциональности.",
-    image: "/assets/products/img6.jpg",
+    image: "/assets/products/img5.jpg",
     priceFrom: 1800,
     features: [
       "Диагностика повреждений",
@@ -327,7 +327,7 @@ export const windowsServices = [
     shortDescription: "Монтаж подоконников",
     fullDescription:
       "Установка подоконника ПВХ. Подгонка по размеру, монтаж на пену, герметизация стыков.",
-    image: "/assets/products/img6.jpg",
+    image: "/assets/products/img5.jpg",
     priceFrom: 2980,
     features: [
       "Замер и подгонка",
@@ -347,7 +347,7 @@ export const windowsServices = [
     shortDescription: "Монтаж оконных отливов",
     fullDescription:
       "Установка отлива на окно. Защита от осадков, герметизация монтажного шва. Работаем с любыми материалами.",
-    image: "/assets/products/img6.jpg",
+    image: "/assets/products/img5.jpg",
     priceFrom: 1000,
     features: [
       "Замер и подгонка",
@@ -365,7 +365,7 @@ export const windowsServices = [
     shortDescription: "Установка пластиковых откосов",
     fullDescription:
       "Изготовление и монтаж откосов из ПВХ панелей. Утепление, герметизация, финишная отделка.",
-    image: "/assets/products/img6.jpg",
+    image: "/assets/products/img5.jpg",
     priceFrom: 1300,
     features: [
       "Замер откосов",
@@ -389,7 +389,7 @@ export const windowsServices = [
     shortDescription: "Комплексное обслуживание окон",
     fullDescription:
       "Полное техническое обслуживание окон: разборка механизмов, чистка, смазка, регулировка. Продление срока службы.",
-    image: "/assets/products/img6.jpg",
+    image: "/assets/products/img5.jpg",
     priceFrom: 2000,
     features: [
       "Разборка механизмов",
@@ -413,7 +413,7 @@ export const windowsServices = [
     shortDescription: "Обслуживание уплотнителя",
     fullDescription:
       "Чистка и смазка резинового уплотнителя специальными средствами. Продление срока службы, сохранение эластичности.",
-    image: "/assets/products/img6.jpg",
+    image: "/assets/products/img5.jpg",
     priceFrom: 600,
     features: [
       "Очистка уплотнителя",
@@ -437,7 +437,7 @@ export const windowsServices = [
     shortDescription: "Ремонт повреждений пластика",
     fullDescription:
       "Затирка трещин, царапин, сколов и термоожогов на пластиковых окнах и дверях. Восстановление внешнего вида.",
-    image: "/assets/products/img6.jpg",
+    image: "/assets/products/img5.jpg",
     priceFrom: 4000,
     features: [
       "Подготовка поверхности",

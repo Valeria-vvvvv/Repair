@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { useParams, Link } from "react-router-dom";
 import { useService } from "../hooks/useServices";
+import { useThematicImageUrl } from "../hooks/useThematicImageUrl";
 import Footer from "../components/ui/Footer/Footer";
 import ContactForm from "../components/forms/ContactForm/ContactForm";
 import "./ServiceDetails.css";
@@ -57,6 +58,10 @@ export const ServiceDetails = () => {
   const { service, category, loading, error } = useService(
     categoryId,
     serviceId,
+  );
+  const { url: imageUrl, loading: imageLoading } = useThematicImageUrl(
+    categoryId,
+    service,
   );
 
   if (loading) {
@@ -116,11 +121,15 @@ export const ServiceDetails = () => {
         {/* Блок с фото и кратким описанием */}
         <div className="service-intro">
           <div className="service-intro-image">
-            <img
-              src={service.image}
-              alt={service.title}
-              className="service-image"
-            />
+            {!imageLoading && imageUrl ? (
+              <img
+                src={imageUrl}
+                alt={service.title}
+                className="service-image"
+              />
+            ) : (
+              <div className="service-intro-image-placeholder" aria-hidden />
+            )}
           </div>
           <div className="service-intro-content">
             <h2 className="service-intro-title">{service.title}</h2>
@@ -128,7 +137,6 @@ export const ServiceDetails = () => {
               <p>{service.description}</p>
             </div>
             <div className="service-price-info">
-              <span className="price-label">Стоимость:</span>
               <span className="price-value">{service.priceFrom}</span>
             </div>
           </div>

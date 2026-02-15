@@ -1,8 +1,34 @@
 import React from "react";
 import { useParams, Link, useNavigate, useLocation } from "react-router-dom";
 import { useServicesByCategory, useServices } from "../hooks/useServices";
+import { useThematicImageUrl } from "../hooks/useThematicImageUrl";
 import Footer from "../components/ui/Footer/Footer";
 import "./ServiceCategory.css";
+
+const ServiceCard = ({ categoryId, service }) => {
+  const { url, loading } = useThematicImageUrl(categoryId, service);
+  return (
+    <Link
+      to={`/services/${categoryId}/${service.id}`}
+      className="service-card"
+    >
+      <div className="service-image">
+        {!loading && url ? (
+          <img src={url} alt={service.title} />
+        ) : (
+          <div className="service-image-placeholder" aria-hidden />
+        )}
+        <div className="service-overlay"></div>
+      </div>
+      <div className="service-content">
+        <h3 className="service-title">{service.title}</h3>
+        <p className="service-description">{service.shortDescription}</p>
+        <div className="service-price">{service.priceFrom}</div>
+        <div className="service-button">Подробнее</div>
+      </div>
+    </Link>
+  );
+};
 
 export const ServiceCategory = () => {
   const { categoryId } = useParams();
@@ -135,27 +161,11 @@ export const ServiceCategory = () => {
         {/* Сетка услуг */}
         <div className="services-grid">
           {services.map((service) => (
-            <Link
+            <ServiceCard
               key={service.id}
-              to={`/services/${categoryId}/${service.id}`}
-              className="service-card"
-            >
-              <div className="service-image">
-                <img src={service.image} alt={service.title} />
-                <div className="service-overlay"></div>
-              </div>
-
-              <div className="service-content">
-                <h3 className="service-title">{service.title}</h3>
-                <p className="service-description">
-                  {service.shortDescription}
-                </p>
-
-                <div className="service-price">{service.priceFrom}</div>
-
-                <div className="service-button">Подробнее</div>
-              </div>
-            </Link>
+              categoryId={categoryId}
+              service={service}
+            />
           ))}
         </div>
 

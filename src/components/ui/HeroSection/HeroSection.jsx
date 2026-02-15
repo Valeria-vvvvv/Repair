@@ -24,7 +24,7 @@ const HeroSection = () => {
         {/* Main Content */}
         <div className="hero-content">
           <div className="hero-text">
-            <h1 className="hero-title">Услуги сантехника</h1>
+            <h1 className="hero-title">Услуги мужа на час</h1>
             <p className="hero-subtitle">
               Квалифицированные сантехники выполняют сантехнические работы
               любого уровня сложности - от замены прокладки в кране и установки

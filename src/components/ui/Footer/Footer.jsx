@@ -7,6 +7,8 @@ const Footer = () => {
       <div className="footer-container">
         <div className="footer-content">
           <div className="footer-left">
+
+            <div className="footer-tg">
             <div className="social-links">
               <a
                 href="https://t.me/stroi_ne_sam_DNR180"
@@ -20,6 +22,9 @@ const Footer = () => {
                 </svg>
               </a>
             </div>
+
+<div>Наш телеграмм</div>
+</div>
 
             <div className="footer-links">
               <a href="#" className="footer-link">

@@ -107,8 +107,14 @@
 
 .service-image {
   position: relative;
-  /* height: 20px; */
+  min-height: 200px;
   overflow: hidden;
+}
+
+.service-image-placeholder {
+  width: 100%;
+  min-height: 200px;
+  background: rgba(255, 255, 255, 0.06);
 }
 
 .service-image img {

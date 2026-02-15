@@ -283,6 +283,10 @@
     font-size: 14px;
   }
 
+  .form-wrapper {
+  min-width: 310px;
+}
+
   .submit-btn {
     padding: 14px 28px;
     font-size: 14px;

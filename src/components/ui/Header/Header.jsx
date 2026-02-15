@@ -23,6 +23,12 @@ const SERVICES_MENU = [
     serviceId: "water-tank-installation",
   },
   {
+    id: "turnkey_repair",
+    title: "Ремонт с 0 под ключ",
+    type: "direct",
+    serviceId: "remont-s-nulya-pod-klyuch",
+  },
+  {
     id: "plumbing",
     title: "Сантехнические работы",
     type: "category",
@@ -57,14 +63,20 @@ const Header = () => {
   const navigate = useNavigate();
   const location = useLocation();
 
-  useEffect(() => {
-    const handleScroll = () => {
-      setIsScrolled(window.scrollY > 50);
-    };
+// Эффект для скролла
+useEffect(() => {
+  const handleScroll = () => {
+    setIsScrolled(window.scrollY > 50);
+  };
+  window.addEventListener("scroll", handleScroll);
+  return () => window.removeEventListener("scroll", handleScroll);
+}, []); // пустой массив 
 
-    window.addEventListener("scroll", handleScroll);
-    return () => window.removeEventListener("scroll", handleScroll);
-  }, []);
+// Эффект для закрытия меню при смене страницы
+useEffect(() => {
+  setIsServicesOpen(false);
+  setIsMenuOpen(false);
+}, [location.pathname]); // ← важно! зависимость от пути
 
   // Функция для навигации к секции
   const handleNavClick = (href) => {

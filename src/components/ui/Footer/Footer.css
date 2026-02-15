@@ -21,6 +21,13 @@
   border-bottom: 1px solid rgba(255, 255, 255, 0.1);
 }
 
+.footer-tg {
+  display: flex;
+  justify-content: start;
+  gap: 20px;
+  align-items: center;
+}
+
 .footer-left {
   display: flex;
   flex-direction: column;

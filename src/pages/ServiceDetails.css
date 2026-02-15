@@ -78,7 +78,15 @@
   position: relative;
 }
 
-.service-image {
+.service-intro-image-placeholder {
+  width: 100%;
+  height: 350px;
+  min-height: 250px;
+  background: rgba(255, 255, 255, 0.06);
+  border-radius: 20px;
+}
+
+.service-intro-image .service-image {
   width: 100%;
   height: 350px;
   object-fit: cover;
@@ -329,7 +337,7 @@
 }
 
 .price-value {
-  font-size: 24px;
+  font-size: 14px;
   font-weight: 700;
   color: #00d4ff;
 }
